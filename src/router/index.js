@@ -1,15 +1,11 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import About from '../views/About.vue'
+import layout from './models/layout'
 
 Vue.use(VueRouter)
 
 const routes = [
-  {
-    path: '/',
-    name: 'About',
-    component: About
-  },
+  ...layout,//主页路由,
 ]
 
 const router = new VueRouter({
